@@ -101,7 +101,7 @@
 
        // Elemen HTML
         const tableBody = document.getElementById('dataSiswa');
-        //const cardContainer = document.getElementById('cardSiswa'); //non aktifkan 
+        const cardContainer = document.getElementById('cardSiswa'); //AKTIFKAN
         const paginationContainer = document.getElementById('paginationContainer');
         const searchInput = document.getElementById('searchSiswa');
 
@@ -129,7 +129,7 @@
             // Generate tabel
             generateTableRows(pageData);
             // Generate kartu (untuk mobile)
-            //generateCards(pageData); // Non aktifkan
+            generateCards(pageData); //AKTIFKAN
 
             // Update tombol pagination
             generatePaginationButtons(page, searchQuery);
@@ -151,21 +151,22 @@
             tableBody.innerHTML = rows;
         }
 
-        // Fungsi untuk membuat kartu data //Non aktifkan
-       /* function generateCards(data) {
-            const cards = data.map(siswa => `
-                <div class="siswa-card" aria-label="Kartu informasi siswa">
-                    <div class="siswa-card-header"> Nama :  <span>${siswa.Nama}</span></div>
+        // Fungsi untuk membuat kartu data
+        function generateCards(data) {
+            const cards = data.map(alumni => `
+                <div class="siswa-card" aria-label="Kartu informasi alumni">
+                    <div class="siswa-card-header"> Nama :  <span>${alumni.Nama}</span></div>
                     <div class="siswa-card-body">
-                        <div class="siswa-card-row"><strong>JK:</strong> <span>${siswa.JK === 'L' ? 'Laki-laki' : 'Perempuan'}</span></div>
-                        <div class="siswa-card-row"><strong>Kelas:</strong> <span>${siswa.Kelas}</span></div>
-                        <div class="siswa-card-row"><strong>NISN:</strong> <span>${siswa.NISN}</span></div>
-                        <div class="siswa-card-row"><strong>NIPD:</strong> <span>${siswa.NIPD}</span></div>
+                        <div class="siswa-card-row"><strong>JK:</strong> <span>${alumni.JK === 'L' ? 'Laki-laki' : 'Perempuan'}</span></div>
+                        <div class="siswa-card-row"><strong>NIS:</strong> <span><span class="alumni-directory-lock">🔒</span></span></div>
+                        <div class="siswa-card-row"><strong>Sekolah Lanjutan:</strong> <span><span class="alumni-directory-lock">🔒</span></span></div>
+                        <div class="siswa-card-row"><strong>Pekerjaan:</strong> <span><span class="alumni-directory-lock">🔒</span></span></div>
+                        <div class="siswa-card-row"><strong>WA/Sosmed:</strong> <span><span class="alumni-directory-lock">🔒</span></span></div>
                     </div>
                 </div>
             `).join('');
             cardContainer.innerHTML = cards;
-        } */
+        }
 
         // Fungsi untuk membuat tombol pagination
         function generatePaginationButtons(activePage, searchQuery = '') {
