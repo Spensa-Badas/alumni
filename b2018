@@ -1,4 +1,11 @@
-       // Data alumni 2018
+        // Fungsi untuk mengubah nama menjadi Capitalized Case
+        function toTitleCase(str) {
+            return str.toLowerCase().split(' ').map(function (word) {
+                return (word.charAt(0).toUpperCase() + word.slice(1));
+            }).join(' ');
+        }
+
+        // Data alumni 2018
         let dataSiswa = [
             { "No": 1, "Nama": "ACHMAD BAYU AJI", "JK": "L" },
             { "No": 2, "Nama": "AGUNG NUGROHO WICAKSONO", "JK": "L" },
