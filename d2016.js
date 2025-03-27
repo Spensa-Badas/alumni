@@ -142,8 +142,8 @@
                     <td class="siswa" data-label="No">${alumni.No}</td>
                     <td class="siswa" data-label="Nama">${alumni.Nama}</td>
                     <td class="siswa" data-label="JK">${alumni.JK}</td>
+                      <td class="siswa" data-label="Thn. Lulus"><span class="alumni-directory-lock">2016</span></td>
                      <td class="siswa" data-label="NIS"><span class="alumni-directory-lock">🔒</span></td>
-                     <td class="siswa" data-label="Thn. Lulus"><span class="alumni-directory-lock">🔒</span></td>
                     <td class="siswa" data-label="SL"><span class="alumni-directory-lock">🔒</span></td>
                     <td class="siswa" data-label="Detail"><span class="alumni-directory-lock">🔒</span></td>
                 </tr>
@@ -158,7 +158,7 @@
                     <div class="siswa-card-header"> Nama :  <span>${alumni.Nama}</span></div>
                     <div class="siswa-card-body">
                         <div class="siswa-card-row"><strong>JK:</strong> <span>${alumni.JK === 'L' ? 'Laki-laki' : 'Perempuan'}</span></div>
-                        <div class="siswa-card-row"><strong>Thn. Lulus:</strong> <span><span class="alumni-directory-lock">🔒</span></span></div>
+                        <div class="siswa-card-row"><strong>Thn. Lulus:</strong> <span><span class="alumni-directory-lock">2016</span></span></div>
                         <div class="siswa-card-row"><strong>NIS:</strong> <span><span class="alumni-directory-lock">🔒</span></span></div>
                         <div class="siswa-card-row"><strong>SL:</strong> <span><span class="alumni-directory-lock">🔒</span></span></div>
                         <div class="siswa-card-row"><strong>Detail:</strong> <span><span class="alumni-directory-lock">🔒</span></span></div>
