@@ -143,7 +143,7 @@
                     <td class="siswa" data-label="Nama">${alumni.Nama}</td>
                     <td class="siswa" data-label="JK">${alumni.JK}</td>
                      <td class="siswa" data-label="NIS"><span class="alumni-directory-lock">🔒</span></td>
-                    <td class="siswa" data-label="Sekolah Lanjutan"><span class="alumni-directory-lock">🔒</span></td>
+                    <td class="siswa" data-label="SL"><span class="alumni-directory-lock">🔒</span></td>
                     <td class="siswa" data-label="Pekerjaan"><span class="alumni-directory-lock">🔒</span></td>
                     <td class="siswa" data-label="WA/Sosmed"><span class="alumni-directory-lock">🔒</span></td>
                 </tr>
@@ -159,7 +159,7 @@
                     <div class="siswa-card-body">
                         <div class="siswa-card-row"><strong>JK:</strong> <span>${alumni.JK === 'L' ? 'Laki-laki' : 'Perempuan'}</span></div>
                         <div class="siswa-card-row"><strong>NIS:</strong> <span><span class="alumni-directory-lock">🔒</span></span></div>
-                        <div class="siswa-card-row"><strong>Sekolah Lanjutan:</strong> <span><span class="alumni-directory-lock">🔒</span></span></div>
+                        <div class="siswa-card-row"><strong>SL:</strong> <span><span class="alumni-directory-lock">🔒</span></span></div>
                         <div class="siswa-card-row"><strong>Pekerjaan:</strong> <span><span class="alumni-directory-lock">🔒</span></span></div>
                         <div class="siswa-card-row"><strong>WA/Sosmed:</strong> <span><span class="alumni-directory-lock">🔒</span></span></div>
                     </div>
