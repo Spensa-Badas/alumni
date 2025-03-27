@@ -144,7 +144,7 @@
                     <td class="siswa" data-label="JK">${alumni.JK}</td>
                      <td class="siswa" data-label="NIS"><span class="alumni-directory-lock">🔒</span></td>
                     <td class="siswa" data-label="SL"><span class="alumni-directory-lock">🔒</span></td>
-                    <td class="siswa" data-label="Pekerjaan"><span class="alumni-directory-lock">🔒</span></td>
+                    <td class="siswa" data-label="Alamat"><span class="alumni-directory-lock">🔒</span></td>
                     <td class="siswa" data-label="WA/Sosmed"><span class="alumni-directory-lock">🔒</span></td>
                 </tr>
             `).join('');
@@ -160,7 +160,7 @@
                         <div class="siswa-card-row"><strong>JK:</strong> <span>${alumni.JK === 'L' ? 'Laki-laki' : 'Perempuan'}</span></div>
                         <div class="siswa-card-row"><strong>NIS:</strong> <span><span class="alumni-directory-lock">🔒</span></span></div>
                         <div class="siswa-card-row"><strong>SL:</strong> <span><span class="alumni-directory-lock">🔒</span></span></div>
-                        <div class="siswa-card-row"><strong>Pekerjaan:</strong> <span><span class="alumni-directory-lock">🔒</span></span></div>
+                        <div class="siswa-card-row"><strong>Alamat:</strong> <span><span class="alumni-directory-lock">🔒</span></span></div>
                         <div class="siswa-card-row"><strong>WA/Sosmed:</strong> <span><span class="alumni-directory-lock">🔒</span></span></div>
                     </div>
                 </div>
